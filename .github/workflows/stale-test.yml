@@ -21,14 +21,15 @@ name: 'Close stale issues'
 on:
   schedule:
     - cron: '*/5 * * * *'
-permissions:
-  issues: write
-  pull-requests: write
+
 jobs:
   stale:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
-      - uses: actions/stale@b69b346013879cedbf50c69f572cd85439a41936
+      - uses: actions/stale@v9
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           ascending: true
