@@ -1,7 +1,7 @@
 name: "Close stale spull requests"
 on:
   schedule:
-    - cron: "30 12 * * */1 "  # arbitrary time not to DDOS GitHub
+    - cron: "30 12 * * */1"  # arbitrary time not to DDOS GitHub
 
 jobs:
   stale:
