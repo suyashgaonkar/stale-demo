@@ -5,7 +5,9 @@ on:
     - cron: '55 16 * * *'
 
 permissions:
-  issues: write
+  contents: write
+  pull-requests: write
+  repository-projects: write
 
 jobs:
   stale:
