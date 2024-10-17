@@ -4,7 +4,6 @@ on: workflow_dispatch
 jobs:
   java-test:
     runs-on: ubuntu-latest
-    container: docker:cli
     steps:
       - name: Set up JDK
         uses: actions/setup-java@v4
