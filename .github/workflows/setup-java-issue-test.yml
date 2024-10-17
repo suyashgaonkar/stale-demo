@@ -1,0 +1,16 @@
+#testing the issue-678 (12)
+name: Java Installation Test
+on:
+  workflow_dispatch:
+jobs:
+  java-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 11
+      - name: Execute Java
+        run: apt list --installed
+    
