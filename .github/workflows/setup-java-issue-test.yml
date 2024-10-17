@@ -1,7 +1,6 @@
 #testing the issue-678 (12)
 name: Java Installation Test
-on:
-  workflow_dispatch:
+workflow_dispatch:
 jobs:
   java-test:
     runs-on: ubuntu-latest
