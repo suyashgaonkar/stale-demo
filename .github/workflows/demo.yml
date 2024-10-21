@@ -1,4 +1,4 @@
-name: 'Close stale issues'
+name: 'Issue 1153'
 
 on:
   workflow_dispatch:
