@@ -23,13 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     container: ubuntu:latest
     steps:
-      # - name: Install docker and docker-compose
-      #   run: |
-      #     apt -y update 
-      #     apt -y install sudo curl
-      #     curl -fsSL https://get.docker.com -o get-docker.sh
-      #     sudo sh ./get-docker.sh
-      #     apt-get install docker-compose-plugin
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
