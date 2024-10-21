@@ -17,11 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     container: ubuntu:latest
     steps:
-      - name: Set up JDK
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 11
       - name: Execute Java
         run: apt list --installed
   
