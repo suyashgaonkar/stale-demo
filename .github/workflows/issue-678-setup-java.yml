@@ -1,5 +1,5 @@
 #testing the issue-678 (12)
-name: Java Installation Test
+name: Issue 678 Setup Java
 on: workflow_dispatch
 jobs:
   java-test:
