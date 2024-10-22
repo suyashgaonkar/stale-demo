@@ -31,8 +31,7 @@ jobs:
       - name: Execute Java
         run: |
           cd /__t/Java_Zulu_jdk/11.0.25-9/x64/bin
-          file java
-          # java -version
+          sudo java -version
   test-ubuntu:
     runs-on: ubuntu-latest
     container: ubuntu:latest
