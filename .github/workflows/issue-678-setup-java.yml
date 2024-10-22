@@ -12,12 +12,7 @@ jobs:
           distribution: zulu
           java-version: 11
       - name: Execute Java
-        run: |
-          which java
-          type java
-          echo $JAVA_HOME
-          echo $PATH
-          java --help
+        run: ls
 
   test-ubuntu:
     runs-on: ubuntu-latest
