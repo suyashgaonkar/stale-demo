@@ -15,6 +15,17 @@ jobs:
         run: |
           cd /__t/Java_Zulu_jdk/11.0.25-9/x64
           ls
+  test-docker-2:
+    runs-on: ubuntu-latest
+    container: docker:cli
+    steps:
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: 11
+      - name: Execute Java
+        run: ls
   test-ubuntu:
     runs-on: ubuntu-latest
     container: ubuntu:latest
