@@ -30,8 +30,6 @@ jobs:
           java-version: 11
       - name: Execute Java
         run: |
-          cd /__t/Java_Zulu_jdk/11.0.25-9/x64
-          ls
           cd /__t/Java_Zulu_jdk/11.0.25-9/x64/bin
           ls
   test-ubuntu:
