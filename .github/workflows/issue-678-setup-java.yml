@@ -33,6 +33,7 @@ jobs:
           cd /__t/Java_Zulu_jdk/11.0.25-9/x64/bin
           ls
           echo $PATH
+          printenv
   test-ubuntu:
     runs-on: ubuntu-latest
     container: ubuntu:latest
