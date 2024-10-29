@@ -9,7 +9,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          distribution: zulu
+          distribution: temurin
           java-version: 11
       - name: Execute Java
         run: |
@@ -26,12 +26,12 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          distribution: zulu
+          distribution: temurin
           java-version: 11
-      - name: Execute Java
-        run: |
-          cd /__t/Java_Zulu_jdk/11.0.25-9/x64/bin
-          ls
+      # - name: Execute Java
+      #   run: |
+      #     cd /__t/Java_Zulu_jdk/11.0.25-9/x64/bin
+      #     ls
   test-ubuntu:
     runs-on: ubuntu-latest
     container: ubuntu:latest
