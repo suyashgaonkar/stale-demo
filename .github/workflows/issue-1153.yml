@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/stale@v9
         with:
-          days-before-stale: -1
+          days-before-stale: 1
           stale-issue-label: 'status:waiting-for-info'
           remove-stale-when-updated: 'false'
           days-before-close: 1
