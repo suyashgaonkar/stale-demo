@@ -17,4 +17,4 @@ jobs:
           close-pr-message: 'Closed as inactive. This is from issue 1132'
           exempt-pr-labels: 'release:after-ga'
           days-before-stale: 2
-          days-before-close: 7
+          days-before-close: 2
