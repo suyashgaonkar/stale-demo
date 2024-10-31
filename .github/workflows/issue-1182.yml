@@ -1,9 +1,9 @@
-name: "Close stale issues and pull requests"
+name: "Issue 1182"
 on:
   workflow_dispatch:
     # schedule:
     #     - cron: "0 0 * * *"
-    
+
 jobs:
     stale:
         runs-on: ubuntu-latest
