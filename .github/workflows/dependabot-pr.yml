@@ -17,4 +17,3 @@ jobs:
                   stale-pr-label: "stale"
                   days-before-issue-stale: 2
                   days-before-pr-stale: 2
-                  any-of-labels: "question,discussion"
