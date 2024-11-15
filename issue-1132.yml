@@ -1,10 +1,10 @@
 name: "Issue 1132"
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: "12 3 * * *"  # arbitrary time not to DDOS GitHub
-# permissions:
-#   pull-requests: write
+  schedule:
+    - cron: "12 3 * * *"  # arbitrary time not to DDOS GitHub
+permissions:
+  pull-requests: write
 
 jobs:
   stale:

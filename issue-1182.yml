@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
     # schedule:
     #     - cron: "0 0 * * *"
-
+permissions:
+  pull-requests: write
 jobs:
     stale:
         runs-on: ubuntu-latest
@@ -12,6 +13,6 @@ jobs:
               with:
                   stale-issue-label: "stale"
                   stale-pr-label: "stale"
-                  days-before-stale: 1
+                  days-before-stale: 
                   days-before-close: 1
                   any-of-labels: "question,discussion"

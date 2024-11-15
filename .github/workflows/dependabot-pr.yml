@@ -1,0 +1,18 @@
+name: "testing Dependbot PR"
+on:
+  workflow_dispatch:
+    # schedule:
+    #     - cron: "0 0 * * *"
+permissions:
+  pull-requests: write
+jobs:
+    stale:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/stale@dependabot/github_actions/actions/publish-immutable-action-0.0.4
+              with:
+                  stale-issue-label: "stale"
+                  stale-pr-label: "stale"
+                  days-before-stale: 
+                  days-before-close: 2
+                  any-of-labels: "question,discussion"
