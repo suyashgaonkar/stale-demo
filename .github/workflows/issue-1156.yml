@@ -1,4 +1,4 @@
-name: Mark Stale Pull Requests
+name: Issue 1156
 
 on:
   workflow_dispatch:
