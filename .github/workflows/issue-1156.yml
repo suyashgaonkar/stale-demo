@@ -1,0 +1,22 @@
+name: Mark Stale Pull Requests
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 1 * * *'
+
+permissions:
+  issues: write
+  pull-requests: write
+
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-stale: 3
+          stale-pr-label: 'stale'
+          labels-to-remove-when-unstale: 'stale'
+          days-before-close: -1
