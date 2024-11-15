@@ -13,6 +13,6 @@ jobs:
               with:
                   stale-issue-label: "stale"
                   stale-pr-label: "stale"
-                  days-before-stale: 
+                  days-before-stale: 2
                   days-before-close: 2
                   any-of-labels: "question,discussion"
