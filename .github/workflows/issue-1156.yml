@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   stale:
-    runs-on: srgmacbookpro
+    runs-on: [self-hosted, rockylinux/rockylinux:9]
     steps:
       - uses: actions/stale@v9
         with:
