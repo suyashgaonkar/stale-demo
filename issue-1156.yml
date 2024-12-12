@@ -1,4 +1,4 @@
-name: Issue 1156
+name: Issue 1156 BBQ beats
 
 on:
   workflow_dispatch:
@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   stale:
+    # runs-on: imagegenteam-ubuntu2004-
     runs-on: ubuntu-latest
     strategy:
       matrix:
