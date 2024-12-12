@@ -1,6 +1,6 @@
 #actions/publish-immutable-action-0.0.4
 
-name: 'Publish Immutable Action 0.0.4'
+name: 'Publish Immutable Action'
 on:
   workflow_dispatch:
 permissions:
