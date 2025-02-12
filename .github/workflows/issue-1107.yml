@@ -14,7 +14,7 @@ jobs:
       close-days: 1
       stale-label: stale
       stale-exempt-label: stale-exempt
-      only-label: more info needed
+      only-label: theme:java
     steps:
     - uses: actions/stale@v9
       with:
