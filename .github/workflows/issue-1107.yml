@@ -6,6 +6,9 @@ on:
 jobs:
   stale:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
     env:
       stale-days: 30
       close-days: 7
