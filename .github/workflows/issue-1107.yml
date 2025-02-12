@@ -10,8 +10,8 @@ jobs:
       issues: write
       pull-requests: write
     env:
-      stale-days: 30
-      close-days: 7
+      stale-days: 1
+      close-days: 1
       stale-label: stale
       stale-exempt-label: stale-exempt
       only-label: more info needed
