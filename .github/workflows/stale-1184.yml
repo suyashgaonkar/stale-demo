@@ -16,7 +16,6 @@
 name: Mark and close stale pull requests
 
 on:
-  workflow_dispatch:
   # schedule:
   #   - cron: '30 3 * * *'    # Run at 3:30 UTC nightly
   workflow_dispatch:
