@@ -51,4 +51,4 @@ jobs:
         days-before-issue-stale: -1
         exempt-pr-labels: "pinned"
         debug-only: ${{ inputs.dryRun || false }}
-        operations-per-run: ${{ inputs.operationsPerRun || 100 }}
+        operations-per-run: 100
