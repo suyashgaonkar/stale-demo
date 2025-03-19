@@ -8,6 +8,7 @@ const server = http.createServer((req, res) => {
   const requestMethod = req.method;
 
   if (url === "/") {
+    console.log("Branch 1184-1")
     res.setHeader("Content-Type", "text/html");
     res.write("<html>");
     res.write("<body>");
