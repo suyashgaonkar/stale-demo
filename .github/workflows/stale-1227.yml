@@ -19,7 +19,7 @@ jobs:
       - uses: actions/stale@v9
         with:
           repo-token: ${{ secrets.REPO_TOKEN }}
-          operations-per-run: 100 # This should be temporary.
+          #operations-per-run: 100 # This should be temporary.
           days-before-issue-stale: 70
           stale-issue-message: >
             This issue has been automatically marked as stale because it has not had
