@@ -1,0 +1,30 @@
+name: Issue 1227
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   cron: '*/30 * * * *'
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        iteration: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80]
+    steps:
+      - uses: actions/stale@v9
+        with:
+          repo-token: ${{secrets.STALE_TOKEN}}
+          operations-per-run: 100 # This should be temporary.
+          days-before-issue-stale: 70
+          stale-issue-message: >
+            This issue has been automatically marked as stale because it has not had
+            any activity in the last 60 days. It will be closed in 7 days if no further
+            activity occurs. Please feel free to leave a comment if you believe the issue
+            is still relevant.
+          close-issue-message: >
+            This issue has been automatically closed due to inactivity.
