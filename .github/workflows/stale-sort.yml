@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: Stale Issue 1231
+name: Stale Issue 1231 Sort
 
 on:
   # schedule:
