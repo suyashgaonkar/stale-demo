@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: Stale Issue aparnajyothi-y:upgrade-actions-cache-4.0.2
+name: Stale Issue 1231
 
 on:
   # schedule:
@@ -39,7 +39,7 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - uses: actions/stale@v9
+    - uses: actions/stale@main
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         stale-pr-message: 'This pull request has been marked as stale due to 30 days of inactivity. It will be closed in 90 days if no further activity occurs. If you think that’s incorrect or this pull request requires a review, please simply write any comment. If closed, you can revive the PR at any time and @mention a reviewer or discuss it on the dev@calcite.apache.org list. Thank you for your contributions.'
@@ -47,8 +47,8 @@ jobs:
         stale-pr-label: 'stale'
         days-before-pr-stale: 3
         days-before-pr-close: 90
-        days-before-issue-close: -1
-        days-before-issue-stale: -1
+        days-before-issue-close: 90
+        days-before-issue-stale: 90
         # exempt-pr-labels: "pinned"
         # debug-only: ${{ inputs.dryRun || false }}
         operations-per-run: 100
