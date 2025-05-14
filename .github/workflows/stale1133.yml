@@ -4,7 +4,7 @@ on:
 
 permissions:
   issues: write
-
+  actions: write
 jobs:
   stale:
     runs-on: ubuntu-latest
