@@ -25,6 +25,7 @@ on:
 permissions:
   issues: write
   pull-requests: write
+  actions: write
 jobs:
   stale:
     runs-on: ubuntu-latest
