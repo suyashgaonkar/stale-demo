@@ -33,7 +33,7 @@ jobs:
       - uses: suyashgaonkar/stale@sort_issues_by
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          ascending: true
+          ascending: false
           stale-issue-label: 'area: stale'
           stale-issue-message: |
             This issue is stale because it has been open for too long without any activity.
