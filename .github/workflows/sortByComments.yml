@@ -33,7 +33,7 @@ jobs:
       - uses: suyashgaonkar/stale@sort_issues_by
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          ascending: false
+          #ascending: false
           stale-issue-label: 'area: stale'
           stale-issue-message: |
             This issue is stale because it has been open for too long without any activity.
@@ -44,5 +44,5 @@ jobs:
           days-before-close: 7
           sort-issues-by: 'comments'
           #exempt-issue-labels: 'area: bug :bug:,status: work in progress,$$ bug-bounty $$'
-          exempt-pr-labels: 'pr: bug-fix,status: work in progress'
+          #exempt-pr-labels: 'pr: bug-fix,status: work in progress'
           operations-per-run: 60
