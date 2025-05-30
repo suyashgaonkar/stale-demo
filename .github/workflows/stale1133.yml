@@ -1,10 +1,9 @@
-name: 'Close stale issues and PRs- repro'
+name: 'Close stale issues and PRs - repro'
 on:
   workflow_dispatch:
 
 permissions:
   issues: write
-  actions: write
 jobs:
   stale:
     runs-on: ubuntu-latest
